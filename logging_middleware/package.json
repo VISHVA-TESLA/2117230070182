@@ -1,0 +1,37 @@
+{
+  "name": "logging_middleware",
+  "version": "1.0.0",
+  "description": "Reusable logging middleware package for Backend and Frontend TypeScript/JavaScript applications",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "ts-node src/example.ts"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "logging",
+    "middleware",
+    "typescript",
+    "logger"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0"
+  }
+}
